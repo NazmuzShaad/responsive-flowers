@@ -1,0 +1,121 @@
+/* Font Styles */
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.noto{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Shared Styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.primary-color{
+    color: #E95A08;
+}
+
+header , main , footer{
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+
+/* Nav Styles */
+
+nav{
+    width: 100%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-link{
+    color: #8987A1;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+#current-page{
+    font-weight: 700;
+    color: black;
+}
+
+/* Banner Styles */
+
+.banner{
+    margin: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50vh;
+    
+}
+
+.banner-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero-title{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.sub-title{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+}
+
+.banner-image{
+    scale: 1.2;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width:576px) {
+    .mobile-hide{
+        display: none;
+    }
+    
+
+
+    .banner{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner-image{
+        scale: 1;
+    }
+
+
+
+
+}
