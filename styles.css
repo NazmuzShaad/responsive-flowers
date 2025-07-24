@@ -107,8 +107,10 @@ nav{
 
 
     .banner{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
+        margin: 60px 0px;
+        gap: 24px;
     }
 
     .banner-image{
